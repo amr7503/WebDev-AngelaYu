@@ -1,0 +1,32 @@
+/* Write your code here: */
+
+/* Group selector - Apply to both selectors*/
+ h1 , h2{  
+    color:blueviolet;
+}
+
+/* Direct descendant selector ( Parent > child)*/
+.box > p{   
+    color: firebrick;
+}
+
+/* Ancestor Descendant selector */
+.box li{
+    color: blue;
+}
+
+/* Chaining selector - without space */
+
+li.done{
+    color: seagreen;
+}
+
+/* Combining combiners */
+
+ul p.done{
+    font-size: 0.5rem;
+}
+
+/* ul > p{
+    font-size: 0.5rem;
+} */

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<!-- https://appbrewery.github.io/css-positioning/ -->
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    /* Write your code here */
+    .red-circle{
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border-radius: 50%;
+      position: relative;
+      top: 150px;
+      left: 250px;
+      /* Top and left are half of the width and height of the blue-box, so 50% can be used. */
+    }
+    .blue-box{
+      width: 500px;
+      height: 300px;
+      background-color: blue;
+      position: relative;
+      top: 200px;
+      left: 200px;
+    }
+    /* Even both or either could be absolute positioning. */
+  </style>
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<!-- NOTES  
+     1. Static positioning is the default positioning of an element.
+     2. Relative positioning is the positioning of an element relative to its default position.
+     3. Absolute positioning is the positioning of an element relative to its nearest positioned ancestor
+        or top left corner of webpage(if no ancestor).
+     4.Fixed positioning is the positioning of an element relative to top left corner of  browser window.(It does not move when the page is scrolled i.e. hover effect)  
+-->
